@@ -1,0 +1,354 @@
+#profil img {
+    float: left;
+    width: 160px;
+    height: auto;
+    margin: 0 20px 10px 20px;
+}
+
+#para1,
+.pa2 {
+    text-align: justify;
+    margin-left: 180px;
+}
+
+#profil,
+#pendidikan,
+#keahlian,
+#sertifikat,
+#proyek,
+#kontak {
+    margin-bottom: 30px;
+}
+
+#pendidikan table,
+#proyek table {
+    width: 100%;
+    border-collapse: collapse !important;
+    border-spacing: 0;
+}
+
+#pendidikan th,
+#pendidikan td,
+#proyek th,
+#proyek td {
+    padding: 8px;
+}
+
+#pendidikan th,
+#proyek th {
+    background-color: #cccccc;
+    text-align: center;
+}
+
+/* Form kontak tetap tanpa garis */
+#kontak table,
+#kontak td {
+    border: none !important;
+}
+
+
+
+   /* DESAIN UMUM PORTOFOLIO */
+:root {
+    --blue: #6DC0ED;
+    --pink: #4A9FD8;
+    --pink-light: #EFF8FF;
+    --pink-soft: #D6EDFF;
+    --text-dark: #344454;
+    --border: #D5E6F2;
+    --white: #FFFFFF;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.7;
+    color: var(--text-dark);
+    background: #F8FCFF;
+    margin: 0;
+    padding: 0 28px;
+}
+
+/* NAVBAR */
+.navbar {
+    margin: 0 -28px 30px;
+    padding: 14px 28px;
+    background: var(--pink-light) !important;
+    border-bottom: 1px solid var(--border);
+}
+
+.navbar-brand {
+    color: #2878A8 !important;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.nav-link {
+    color: var(--text-dark) !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #368FC4 !important;
+}
+
+/* 
+PORTOFOLIO */
+section,
+.sertifikat {
+    margin: 15px 0;
+    padding: 24px;
+    background: var(--white);
+    border: 1px solid #DCEBF5;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(55, 116, 153, 0.07);
+}
+
+section h2,
+.sertifikat h2 {
+    color: #2878A8;
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #397DA5;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+p {
+    text-align: justify;
+}
+
+a {
+    color: #368FC4;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #205D83;
+    text-decoration: underline;
+}
+
+/* PROFIL */
+#profil img {
+    float: left;
+    width: 160px;
+    height: auto;
+    margin: 0 20px 10px 20px;
+}
+
+#para1,
+.pa2 {
+    text-align: justify;
+    margin-left: 180px;
+}
+
+/* Foto profil jika menggunakan class */
+.foto-profil {
+    object-fit: cover;
+    border-radius: 14px;
+    border: 3px solid var(--pink-soft);
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+/* jarak antar bagian */
+#profil,
+#pendidikan,
+#keahlian,
+#sertifikat,
+#proyek,
+#kontak {
+    margin-bottom: 5px !important;
+}
+
+/* tabel pendidikan dan proyek */
+#pendidikan table,
+#proyek table {
+    width: 100%;
+    border-collapse: collapse !important;
+    border-spacing: 0;
+    background-color: var(--white);
+    border: 1px solid var(--border) !important;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#pendidikan th,
+#pendidikan td,
+#proyek th,
+#proyek td {
+    border: 1px solid var(--border) !important;
+    padding: 13px 15px;
+    vertical-align: middle;
+}
+
+/* Header tabel */
+
+#pendidikan th,
+#proyek th {
+    background-color: #C7E6FA !important;
+    color: #28516D;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Baris tabel */
+
+#pendidikan tbody tr,
+#proyek tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+#pendidikan tbody tr:nth-child(even),
+#proyek tbody tr:nth-child(even) {
+    background-color: #F4FAFF;
+}
+
+#pendidikan tbody tr:hover,
+#proyek tbody tr:hover {
+    background-color: #E5F4FF;
+}
+
+
+/* form kontak */
+#kontak table,
+#kontak .tabel-kontak {
+    width: auto;
+    border: none !important;
+    border-collapse: separate !important;
+}
+
+#kontak table td,
+#kontak .tabel-kontak td,
+#kontak .tabel-kontak tr {
+    border: none !important;
+    padding: 7px;
+}
+
+#kontak input:not([type="radio"]):not([type="checkbox"]):not([type="file"]),
+#kontak select,
+#kontak textarea {
+    max-width: 100%;
+    padding: 9px 11px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+#kontak input:focus,
+#kontak select:focus,
+#kontak textarea:focus {
+    outline: none;
+    border-color: var(--pink);
+    box-shadow: 0 0 0 3px rgba(74, 159, 216, 0.15);
+}
+
+#kontak input[type="submit"],
+#kontak input[type="reset"] {
+    padding: 9px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#kontak input[type="submit"] {
+    background: var(--pink);
+    color: white;
+}
+
+#kontak input[type="reset"] {
+    background: #E6F0F7;
+    color: var(--text-dark);
+}
+
+#kontak input[type="submit"]:hover,
+#kontak input[type="reset"]:hover {
+    opacity: 0.8;
+}
+
+/* gif & footer */
+.gif-bawah {
+    display: block;
+    width: 100px;
+    height: auto;
+    margin: 25px auto;
+}
+
+hr {
+    border-color: var(--border);
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 16px 0;
+    color: #71899A;
+    font-size: 14px;
+}
+
+footer p {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* tampilan hp */
+@media (max-width: 650px) {
+    body {
+        padding: 0 12px;
+    }
+
+    .navbar {
+        margin: 0 -12px 20px;
+        padding: 12px;
+    }
+
+    section,
+    .sertifikat {
+        padding: 15px;
+        margin: 15px 0;
+    }
+
+    section h2,
+    .sertifikat h2 {
+        font-size: 20px;
+    }
+
+    #profil img {
+        width: 120px;
+        margin: 0 12px 8px 0;
+    }
+
+    #para1,
+    .pa2 {
+        margin-left: 0;
+    }
+
+    #pendidikan,
+    #proyek {
+        overflow-x: auto;
+    }
+
+    #pendidikan table,
+    #proyek table {
+        min-width: 560px;
+    }
+
+    #pendidikan th,
+    #pendidikan td,
+    #proyek th,
+    #proyek td {
+        padding: 9px;
+        font-size: 13px;
+    }
+}
